@@ -201,20 +201,32 @@ body {
  }
 
  .contaner3 {
+   position: relative;
+   height:auto;
    background-color: rgba(255,250,239,0.3);
    width:95%;
    margin:0px auto;
    margin-top:40px;
    clear: both;
-   min-height: 350px;
+   min-height: 400px;
  }
  .contaner3-1 {
    background-color: rgba(255,250,239,0.3);
+   position: relative;
    width:95%;
    margin:0px auto;
    margin-top:25px;
    clear: both;
-   min-height: 350px;
+   min-height: 400px;
+ }
+ .contaner3-2 {
+   background-color: rgba(255,250,239,0.3);
+   position: relative;
+   width:95%;
+   margin:0px auto;
+   margin-top:25px;
+   clear: both;
+   min-height: 280px;
  }
 
 .sen{
@@ -252,6 +264,13 @@ body {
   text-align: center;
   z-index: 1;
 }
+.contaner3-2 .left{
+  width:40%;
+  height:auto;
+  float:left;
+  text-align: center;
+  z-index: 1;
+}
 
 
 .contaner3 .left img{
@@ -259,6 +278,10 @@ body {
   height:auto;
 }
 .contaner3-1 .left img{
+  width:100%;
+  height:auto;
+}
+.contaner3-2 .left img{
   width:100%;
   height:auto;
 }
@@ -271,6 +294,12 @@ body {
   text-align: center;
 }
 .contaner3-1 .right{
+  width:60%;
+  height:auto;
+  float:left;
+  text-align: center;
+}
+.contaner3-2 .right{
   width:60%;
   height:auto;
   float:left;
@@ -289,6 +318,12 @@ body {
   margin:0 auto;
   margin-top: 5px;
 }
+.contaner3-2 .right img{
+  width:80%;
+  height:auto;
+  margin:0 auto;
+  margin-top: 5px;
+}
 
 .contaner3 .overview{
   margin-top: 10px;
@@ -296,6 +331,11 @@ body {
   text-align: left;
 }
 .contaner3-1 .overview{
+  margin-top: 10px;
+  margin-left:15px;
+  text-align: left;
+}
+.contaner3-2 .overview{
   margin-top: 10px;
   margin-left:15px;
   text-align: left;
