@@ -35,6 +35,6 @@ $("document").ready(function(){
     autoplaySpeed: 15000,
     arrows: false,
     centerMode: true,
-    centerPadding: '20%'
+    centerPadding: '15%'
   });
 });

@@ -67,6 +67,7 @@ body {
   width:100%;
   clear: both;
   height:400px;
+  padding:15px;
 }
 
 .post-left{
@@ -165,10 +166,10 @@ body {
   margin-left: 1px;
 }
 .ue{
-  height:55%;
+  height:60%;
 }
 .sita{
-  height: 45%;
+  height: 40%;
   overflow: scroll;
 }
 
@@ -202,18 +203,25 @@ body {
  .contaner3 {
    background-color: rgba(255,250,239,0.3);
    width:95%;
-   margin:0 auto;
-   margin-top:5px;
+   margin:0px auto;
+   margin-top:40px;
    clear: both;
-   height:auto;
+   min-height: 350px;
+ }
+ .contaner3-1 {
+   background-color: rgba(255,250,239,0.3);
+   width:95%;
+   margin:0px auto;
+   margin-top:25px;
+   clear: both;
    min-height: 350px;
  }
 
 .sen{
   background-color: #FFFAEF;
   width:100%;
-  padding-top:3px;
-  padding-bottom: 3px;
+  padding-top:10px;
+  padding-bottom: 10px;
   background-image: repeating-linear-gradient(-50deg,#DEB887	, #DEB887	 30px, transparent 30px, transparent 32px, #DEB887	 32px), repeating-linear-gradient(40deg, #DEB887	, #DEB887	 30px, transparent 30px, transparent 32px,#DEB887	 32px), repeating-linear-gradient(130deg, #DEB887, #DEB887 30px, transparent 30px, transparent 32px, #DEB887 32px), repeating-linear-gradient(220deg, #DEB887, #DEB887 30px, transparent 30px, transparent 32px, #DEB887 32px);
   background-size: 2px 100%, 100% 2px, 2px 100% , 100% 2px;
   background-position: 0 0, 0 0, 100% 0, 0 100%;
@@ -222,7 +230,7 @@ body {
 }
 
 .sen font{
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   margin-left: 15px;
 }
@@ -237,11 +245,24 @@ body {
   text-align: center;
   z-index: 1;
 }
+.contaner3-1 .left{
+  width:40%;
+  height:auto;
+  float:left;
+  text-align: center;
+  z-index: 1;
+}
+
 
 .contaner3 .left img{
   width:100%;
   height:auto;
 }
+.contaner3-1 .left img{
+  width:100%;
+  height:auto;
+}
+
 
 .contaner3 .right{
   width:60%;
@@ -249,15 +270,32 @@ body {
   float:left;
   text-align: center;
 }
+.contaner3-1 .right{
+  width:60%;
+  height:auto;
+  float:left;
+  text-align: center;
+}
 
 .contaner3 .right img{
-  width:70%;
+  width:80%;
+  height:auto;
+  margin:0 auto;
+  margin-top: 5px;
+}
+.contaner3-1 .right img{
+  width:80%;
   height:auto;
   margin:0 auto;
   margin-top: 5px;
 }
 
 .contaner3 .overview{
+  margin-top: 10px;
+  margin-left:15px;
+  text-align: left;
+}
+.contaner3-1 .overview{
   margin-top: 10px;
   margin-left:15px;
   text-align: left;
