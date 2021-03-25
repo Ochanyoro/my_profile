@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+@import "font-awesome";
+
+
+.star{
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  color: #FF9C32;
+}
+
+.hidari .p{
+  color:black;
+  font-size:13px;
+  margin:0;
+  text-align:center;
+}
+.star:before{
+  font-weight: 900;
+}
+.star:after{
+  font-weight: 400;
+}
+
+.star[data-rate="0.0"]:before{ content: ""; }
+.star[data-rate="0.5"]:before{ content: "\f5c0"; }
+.star[data-rate="1.0"]:before{ content: "\f005"; }
+.star[data-rate="1.5"]:before{ content: "\f005\f5c0"; }
+.star[data-rate="2.0"]:before{ content: "\f005\f005"; }
+.star[data-rate="2.5"]:before{ content: "\f005\f005\f5c0"; }
+.star[data-rate="3.0"]:before{ content: "\f005\f005\f005"; }
+.star[data-rate="3.5"]:before{ content: "\f005\f005\f005\f5c0"; }
+.star[data-rate="4.0"]:before{ content: "\f005\f005\f005\f005"; }
+.star[data-rate="4.5"]:before{ content: "\f005\f005\f005\f005\f5c0"; }
+.star[data-rate="5.0"]:before{ content: "\f005\f005\f005\f005\f005"; }
+
+.star[data-rate="0.0"]:after{ content: "\f005\f005\f005\f005\f005"; }
+.star[data-rate="0.5"]:after{ content: "\f005\f005\f005\f005"; }
+.star[data-rate="1.0"]:after{ content: "\f005\f005\f005\f005"; }
+.star[data-rate="1.5"]:after{ content: "\f005\f005\f005"; }
+.star[data-rate="2.0"]:after{ content: "\f005\f005\f005"; }
+.star[data-rate="2.5"]:after{ content: "\f005\f005"; }
+.star[data-rate="3.0"]:after{ content: "\f005\f005"; }
+.star[data-rate="3.5"]:after{ content: "\f005"; }
+.star[data-rate="4.0"]:after{ content: "\f005"; }
+.star[data-rate="4.5"]:after{ content: ""; }
+.star[data-rate="5.0"]:after{ content: ""; }
+
+.pal{
+  text-align: left;
+  margin-top: 5px;
+  padding-left: 0px;
+}

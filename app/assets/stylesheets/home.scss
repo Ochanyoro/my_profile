@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-family: inherit;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-left h4{
+  line-height: 0.9;
+      margin-bottom: 1px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  outline-width: 0;
+}
+
+form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+
+/* 共通レイアウト ================================ */
+body {
+  //background-color: #3ecdc6;
+  //background-color: #FFB28C;
+  margin: 0;
+  min-height: 1vh;
+}
+
+
+.main {
+  text-align: center;
+  max-width: 650px;
+  width: 100%;
+  margin:0 auto;
+  height: auto;
+  min-height: 100%;
+  background-color: rgba(237,228,225,0.1)
+
+}
+.mannaka{
+  width:100%;
+  margin:0 auto;
+}
+
+.cont {
+  width:100%;
+  clear: both;
+  height:400px;
+}
+
+.post-left{
+  width:50%;
+  height:100%;
+  float:left;
+  padding-top: 5px;
+  text-align: center;
+}
+.post-right{
+  width:50%;
+  float:left;
+  text-align: center;
+}
+.post-right img{
+  width:50%;
+  height:400px;
+}
+
+
+.post-left img {
+  width: 90px;
+  height: 90px;
+  border-radius: 40%;
+  box-shadow: 0 2px 6px #c1ced7;
+  object-fit: cover;
+}
+
+.fab{
+  padding-right: 5px;
+  padding-left:  5px;
+}
+.size{
+  color:#1da1f2;
+}
+.size2{
+  color:orange;
+}
+.size3{
+  color:#20c997;
+}
+.size4{
+  color:#FA5858;
+}
+.size5{
+  color:#A5A5A5
+}
+.size6{
+  color:#FA5858;
+  margin-left: -14px;
+}
+.post-left a{
+  color:black
+}
+
+.pro{
+  width:100%;
+  margin-bottom: 1px;
+  background-color: #E6E6E6;
+  padding-left:10px;
+  text-align:left;
+  font-size: 15px;
+  font-weight:200;
+}
+.pro font{
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight:500;
+}
+
+.posts-index-item {
+  margin-top: 10px;
+  min-height:94%;
+  width:100%;
+  padding: 1px 2px;
+  text-align: left;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+.fa-tags{
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-right: 5px;
+  margin:0
+}
+
+.posts-index-item font{
+  font-size: 13px;
+}
+.posts-index-item .study{
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgba(230,230,230,0.7);
+  margin-left: 1px;
+}
+.ue{
+  height:55%;
+}
+.sita{
+  height: 45%;
+  overflow: scroll;
+}
+
+
+
+
+.slider {
+   width: 90%;
+   margin: 0 auto 5px;
+ }
+ .slick-slide img {
+   width: 100%;
+   height: auto;
+ }
+ .mypattern{
+   width: 100%;
+ }
+ .mypattern .slick-slide{
+   margin: 5px;
+ }
+
+
+ .contaner2 {
+   width:95%;
+   margin:0 auto;
+   margin-top: 15px;
+   clear: both;
+   height:auto;
+ }
+
+ .contaner3 {
+   background-color: rgba(255,250,239,0.3);
+   width:95%;
+   margin:0 auto;
+   margin-top:5px;
+   clear: both;
+   height:auto;
+   min-height: 350px;
+ }
+
+.sen{
+  background-color: #FFFAEF;
+  width:100%;
+  padding-top:3px;
+  padding-bottom: 3px;
+  background-image: repeating-linear-gradient(-50deg,#DEB887	, #DEB887	 30px, transparent 30px, transparent 32px, #DEB887	 32px), repeating-linear-gradient(40deg, #DEB887	, #DEB887	 30px, transparent 30px, transparent 32px,#DEB887	 32px), repeating-linear-gradient(130deg, #DEB887, #DEB887 30px, transparent 30px, transparent 32px, #DEB887 32px), repeating-linear-gradient(220deg, #DEB887, #DEB887 30px, transparent 30px, transparent 32px, #DEB887 32px);
+  background-size: 2px 100%, 100% 2px, 2px 100% , 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.sen font{
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+
+
+
+.contaner3 .left{
+  width:40%;
+  height:auto;
+  float:left;
+  text-align: center;
+  z-index: 1;
+}
+
+.contaner3 .left img{
+  width:100%;
+  height:auto;
+}
+
+.contaner3 .right{
+  width:60%;
+  height:auto;
+  float:left;
+  text-align: center;
+}
+
+.contaner3 .right img{
+  width:70%;
+  height:auto;
+  margin:0 auto;
+  margin-top: 5px;
+}
+
+.contaner3 .overview{
+  margin-top: 10px;
+  margin-left:15px;
+  text-align: left;
+}
+
+.marker_line0{
+  background: linear-gradient(transparent 50%,#fec1fe 0%)
+}
+.marker_line1{
+  background: linear-gradient(transparent 50%,#BAD3FF		 0%)
+}
+
+.overview .fa{
+  font-size: 13px;
+}
+
+.overview .study{
+  font-size: 10px;
+  font-weight: 600;
+  background-color: rgba(230,230,230,0.7);
+  margin-left: 1px;
+}
