@@ -71,6 +71,7 @@
   box-shadow: 0 2px 6px #c1ced7;
   -o-object-fit: cover;
   object-fit: cover;
+  z-index: 1;
 }
 
 .line{
@@ -87,6 +88,7 @@ $myTextColor:  #8de055; // 吹き出しの色
 /*///////////////////////////////////////////////*/
 
 .line__container {
+  background-color: rgba(255,249,238,0.4);
   padding:10px;
   padding-left: 5px;
   padding-right: 5px;
@@ -94,7 +96,6 @@ $myTextColor:  #8de055; // 吹き出しの色
   overflow: hidden;
   margin: 0px auto;
   font-size: 80%;
-  border:1px dashed #444;
 
   /* 会話部分 */
   .line__contents {
