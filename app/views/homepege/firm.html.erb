@@ -1,0 +1,61 @@
+<div class="main">
+  <div class="mannnaka">
+    <%= render "/shared/myprofile" %>
+    <%= render "/shared/head" %>
+    <div class="title">
+      <h6 style="font-size:13px;">企業の皆様へ</h6>
+    </div>
+
+    <div class="work_container_firm">
+      <div class="content">
+        <ul>
+          <li>・本日はお忙しい中私のWebサイトへお越しいただき誠に<br>&nbsp;&nbsp;&nbsp;ありがとうございます。
+            <br>&nbsp;&nbsp;&nbsp;以下がメニューとなっております。
+          </li>
+        </ul>
+        <div class="menu">
+            <li>
+              <%= link_to("/home/profile", {method: "get"}) do %>
+                プロフィール
+              <% end %>
+            </li>
+            <li>
+              <%= link_to("/home/my_work", {method: "get"}) do %>
+                作品紹介
+              <% end %>
+            </li>
+            <li class="scrr">連絡先</li>
+        </div>
+        <ul class="mb-5">
+          <li>・まず始めに私のプロフィールについてご紹介します<br>&nbsp;&nbsp;&nbsp;以下のリンクをクリックしてください。
+            <br>&nbsp;&nbsp;
+            <%= link_to("/home/profile", {method: "get"}) do %>
+              プロフィールへ
+            <% end %>
+            <br>&nbsp;&nbsp;&nbsp;※私はお笑いが好きなので漫才風に作ってありますので見<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;にくいかと思いますが予めご了承ください。
+          </li>
+        </ul>
+
+        <ul class="mb-5">
+          <li>・続きまして私の作った作品についてご紹介します
+            <br>&nbsp;&nbsp;&nbsp;ここでは作品の概要の他になぜ作ろうとしたのかなどの理<br>&nbsp;&nbsp;&nbsp;由についても書いてありますのでご覧いただければ幸いで<br>&nbsp;&nbsp;&nbsp;す。
+            <br>&nbsp;&nbsp;&nbsp;以下のリンクをクリックしてください。
+            <br>&nbsp;&nbsp;
+            <%= link_to("/home/my_work", {method: "get"}) do %>
+              私の作った作品へ
+            <% end %>
+          </li>
+        </ul>
+
+        <ul class="mb-5">
+          <li>・最後に私への連絡方法についてご紹介いたします
+            <br>&nbsp;&nbsp;&nbsp;もし私のプロフィールや作品を見て私に興味を持っていた<br>&nbsp;&nbsp;&nbsp;だけましたら以下のメールアドレスへご連絡ください。
+            <br>&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope size-blue pr-2" aria-hidden="true"></i>owadakazuhiro426@gmail.com
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,344 @@
+<div class="main">
+  <div class="mannnaka">
+    <%= render "/shared/myprofile" %>
+    <%= render "/shared/head" %>
+    <div class="title-red">
+      <h6>My work</h6>
+    </div>
+
+    <div class="work_container">
+      <div class="work_container_part">
+        <div class="left">
+          <a href="https://exam-step.herokuapp.com/"><img src="<%= "/title/1.jpg" %>"></a>
+          <div class="overview">
+            <div class="cent">
+              <i class="fa fa-pencil size4" aria-hidden="true" style="font-size:15px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line0">過去問を共有できるサイト</strong></font><br>
+            </div>
+            <i class="fa fa-file size5" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">機能</strong></font><br>
+            <font class="study">Ruby on Rails</font>
+            <font class="study">login(ハッシュ)</font>
+            <font class="study">DB</font>
+            <font class="study">ActiveStorage</font>
+            <font class="study">s3</font>
+            <font class="study">ActionCable</font>
+            <font class="study">slick</font><br>
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i><font size="1" style="padding-left:9px"><strong class="marker_line1">テストアカウント</strong></font><br>
+            <font size="1" style="font-weight:600">学校:Test</font><br>
+            <font size="1" style="font-weight:600">パスワード:password</font><br>
+            <div class="sslick mt-2 mb-2">
+              <a href="<%= "/exam-step/1.png" %>" rel=lightbox><img src="<%= "/exam-step/1.png" %>" width="100%"></a>
+              <a href="<%= "/exam-step/2.png" %>" rel=lightbox><img src="<%= "/exam-step/2.png" %>" width="100%"></a>
+              <a href="<%= "/exam-step/3.png" %>" rel=lightbox><img src="<%= "/exam-step/3.png" %>" width="100%"></a>
+              <a href="<%= "/exam-step/4.png" %>" rel=lightbox><img src="<%= "/exam-step/4.png" %>" width="100%"></a>
+              <a href="<%= "/exam-step/5.png" %>" rel=lightbox><img src="<%= "/exam-step/5.png" %>" width="100%"></a>
+              <a href="<%= "/exam-step/6.png" %>" rel=lightbox><img src="<%= "/exam-step/6.png" %>" width="100%"></a>
+              <a href="<%= "/exam-step/7.png" %>" rel=lightbox><img src="<%= "/exam-step/7.png" %>" width="100%"></a>
+            </div>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">特徴</strong></font><br>
+            <font size="1">学校にログインし、学科→教授→教科を選択することでその教授の雰囲気や教科の難易度などを知ることができるよ.また教科ごとに過去問や課題などを共有でき,
+              わからない問題はリアルタイムのチャットで質問できるよ! また,今中学生や高校生の人は行きたい学校の先輩とチャットを通して会話できるよ.知りたいことがあったら質問してみるのもあり.</font><br>
+
+            <i class="fa fa-question" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">なぜ作ろうとしたのか?</strong></font><br>
+            <font size="1">ほとんどの大学生はLineのグループで過去問を共有していると思うのですが,それではグループによって持っている過去問の年度や種類が異なって来る場合があります.また過去問を入手できない人も現れてくると思います.
+            そこでwebサイト上で過去問を一括管理することでほぼすべての年度の過去問を入手することができるようになります.またわからない問題をすぐにチャットで質問できるので試験対策が楽になり今までよりもさらに効率よく勉強できるようになると思い作成しました。</font><br>
+            <br>
+            <i class="fa fa-thumbs-up size-red" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">頑張った点</strong></font><br>
+            <font size="1">1. <strong>ActionCable</strong>:Qiitaを参考にしながら作成したのですがQiitaのプログラムそのままでは動作しなかったのでプログラムのどの部分を修正すれば動くのかを考えること.</font><br>
+            <font size="1" style="word-break: break-all;">2. <strong>ActiveStorage</strong>:ActiveStorageを初めて使用したので画像の保存の仕方や取り出し方,またHerokuへのDeployする際の注意点</font><br>
+            <br>
+            <br>
+            <i class="fa fa-thumbs-down size-blue" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">改善点</strong></font><br>
+            <div class="sc">
+              <div class="s">
+              <font size="1"><strong>セキュリティー</strong>:現状私が思いつく限りの脆弱性しか考慮していないため私が知らない,もしくは忘れているプログラムの脆弱性はカバーしきれていない.安全なサイトを作成するためにセキュリテ
+              ィーに関する本などで勉強する必要がある.</font><br>
+              <font size="1"><strong>プログラムの内容</strong>:<br>1.現段階ではチャットでは文字しか送ることができない.画像を送れるように一度プログラムを組んでみたがうまく動作しなかったのでjsでの画像の読み込み及び保存の仕方などを勉強し
+                画像を送れるように機能を改善する.<br>
+                2.現状では過去問などの画像をクリックするとその画像のみがアップされるため,クリックした際その画像に関係するすべての画像を表示できるようにしたい</font><br>
+            <font size="1"><strong>機能</strong>:このサイトではログイン処理はdeviseをつかっていないのでログイン処理をdeviseに変更する</font><br>
+            </div>
+            </div>
+            <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">作成期間:</strong> 3週間</font><br>
+            <i class="fa fa-flag" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">完成日:</strong>2021/3/23</font><br>
+
+          </div>
+        </div>
+        <div class="right">
+          <a href="https://recommend-song.herokuapp.com/"><img src="<%= "/title/2.jpg" %>"></a>
+          <div class="overview">
+            <div class="cent">
+              <i class="fa fa-pencil size4" aria-hidden="true" style="font-size:15px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line0">今流行りの曲を聞こう!</strong></font><br>
+            </div>
+            <i class="fa fa-file size5" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">機能</strong></font><br>
+            <font class="study">Ruby on Rails</font>
+            <font class="study">devise</font>
+            <font class="study">DB</font>
+            <font class="study">s3</font>
+            <font class="study">ActiveStorage</font>
+            <font class="study">いいね</font><br>
+            <font class="study">youtube</font><br>
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">テストアカウント</strong></font><br>
+            <font size="1" style="font-weight:600">メルアド:test@test.com</font><br>
+            <font size="1" style="font-weight:600">パスワード:password</font><br>
+            <div class="sslick mt-2 mb-2">
+              <a href="<%= "/recommend-song/1.png" %>" rel=lightbox><img src="<%= "/recommend-song/1.png" %>" width="100%"></a>
+              <a href="<%= "/recommend-song/2.png" %>" rel=lightbox><img src="<%= "/recommend-song/2.png" %>" width="100%"></a>
+              <a href="<%= "/recommend-song/3.png" %>" rel=lightbox><img src="<%= "/recommend-song/3.png" %>" width="100%"></a>
+              <a href="<%= "/recommend-song/4.png" %>" rel=lightbox><img src="<%= "/recommend-song/4.png" %>" width="100%"></a>
+              <a href="<%= "/recommend-song/5.png" %>" rel=lightbox><img src="<%= "/recommend-song/5.png" %>" width="100%"></a>
+            </div>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">特徴</strong></font><br>
+            <font size="1">おすすめ順に曲が並んでいるので今流行りの曲を見つけることができるよ.topページは曲名とコメントのみなので今まで聞いてこなかったジャンルを発掘できるかも!いいね機能や投稿機能もあるので
+              自分のおすすめの曲も投稿してみよう。曲名をクリックするとyoutubeに飛ぶよ<br><br></font><br>
+            <i class="fa fa-question" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">なぜ作ろうとしたのか?</strong></font><br>
+            <font size="1">自分が聞く曲はどうしても同じジャンルの曲や好きな歌手の曲に偏ってしまっていた.そこで歌手名がわからなければ今まで興味がなかったジャンルの曲も聞くようになると思い曲名とコメントのみのランキングを作成
+            しようと思いました.もう一つの理由として今までのおすすめの曲ランキングでは,なぜその曲がおすすめなのかまた曲のどの部分がおすすめなのかを伝えられる機能がなかった.そこでコメント機能をつけることによってその曲の魅力を多くの人
+          に伝えられるようにしたいと思い作成しました.</font><br>
+          <i class="fa fa-thumbs-up size-red" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">頑張った点</strong></font><br>
+          <font size="1">1. <strong>DBの関係性</strong>:データベースの親子関係を作成すること.またどのDBが削除されたらそれに対応するDBを削除するのかの対応表を作成すること.</font><br>
+          <font size="1" style="word-break: break-all;">2. <strong>おすすめ度の計算とランキング順の表示の仕方</strong>:5段階評価でそれぞれの曲のおすすめ度の決め方について考えること.今回の場合はいいねの数で
+          計算したがこれが最善策なのかはわからないため良い案が思いつき次第更新していきたい</font><br>
+          <i class="fa fa-thumbs-down size-blue" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">改善点</strong></font><br>
+          <div class="sc">
+            <div class="s">
+              <font size="1"><strong>プログラムの内容</strong>:現段階ではランキングの表示方法はいいねの数によって左右されているが,他にもその日の人気順また年齢ごとのランキング順など1パターンだけでなく多くのパターンでランキングを
+                発表したい.<br>
+                良いね機能があるだけで自分がいいねした投稿を見ることができないので自分が良いねしたものを見れるようにプログラム内容を修正したい
+              </font>
+            </div>
+          </div>
+          <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">作成期間:</strong> 2週間</font><br>
+          <i class="fa fa-flag" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">完成日:</strong>2021/2/26</font><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="work_container_part">
+      <div class="left mt-5">
+        <img src="<%= "/title/3.jpg" %>">
+        <div class="overview">
+          <div class="cent">
+            <i class="fa fa-pencil size4" aria-hidden="true" style="font-size:15px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line0">共有できるカレンダー?</strong></font><br>
+          </div>
+          <i class="fa fa-file size5" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">機能</strong></font><br>
+          <font class="study">django</font>
+          <font class="study">python</font>
+          <font class="study">DB</font>
+          <font class="study">AbstractUser</font>
+          <font class="study">allauth</font>
+          <font class="study">エクセル読み込み</font>
+          <font class="study">カレンダー</font><br>
+          <div class="qw">
+          <div class="sslick mt-2 mb-2">
+            <a href="<%= "/scheler/1.png" %>" rel=lightbox><img src="<%= "/scheler/1.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/2.png" %>" rel=lightbox><img src="<%= "/scheler/2.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/3.png" %>" rel=lightbox><img src="<%= "/scheler/3.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/4.png" %>" rel=lightbox><img src="<%= "/scheler/4.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/5.png" %>" rel=lightbox><img src="<%= "/scheler/5.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/6.png" %>" rel=lightbox><img src="<%= "/scheler/6.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/7.png" %>" rel=lightbox><img src="<%= "/scheler/7.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/8.png" %>" rel=lightbox><img src="<%= "/scheler/8.png" %>" width="100%"></a>
+            <a href="<%= "/scheler/9.png" %>" rel=lightbox><img src="<%= "/scheler/9.png" %>" width="100%"></a>
+          </div>
+          </div>
+          <i class="fa fa-file-text-o" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">特徴</strong></font><br>
+          <font size="1">予定をグループの人と共有できます.知られたくない予定は個人用で管理することで自分以外の人に見られないようにできるよ!
+            また,グループに入っておくことでそのグループ内すべての人の予定を見れるようになるので遊ぶ予定などを立てやすくなります.ただレイアウトが下手なので改善が必要</font><br>
+          <br>
+          <i class="fa fa-question" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">なぜ作ろうとしたのか?</strong></font><br>
+          <font size="1">友だちを遊びに誘うときにその日に限って用事があってなかなか予定が合わないことがありました。そこで相手とカレンダーを共有することができれば遊びに誘いやすくなると思い作ろうと思いました.
+          また,人には見られたくない予定などもあると思いましたので"個人"のグループを作ることで予定を別々に管理できるようにしようと思いました.</font><br>
+          <i class="fa fa-thumbs-up size-red" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">頑張った点</strong></font><br>
+          <font size="1">1. <strong>Django</strong>:Djangoでの開発が初めてだったのでDjangoの扱い方を1から調べながらやったこと.</font><br>
+          <font size="1" style="word-break: break-all;">2. <strong>カレンダー</strong>:個人用とグループ用でのデータの管理の仕方,またデータベースからの予定の取り出し方など</font><br>
+          <br>
+          <br>
+          <br>
+          <i class="fa fa-thumbs-down size-blue" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">改善点</strong></font><br>
+          <div class="sc">
+            <div class="s">
+            <font size="1"><strong>デザイン</strong>:人に使ってもらうためには使いたいと思うようなデザインにする必要があるので今の幼稚なデザインではなくjavascript,jqueryなどを活用し見やすいデザインにする</font><br>
+            <font size="1"><strong>プログラムの内容</strong>:<br>1.プログラムのコードがとても見づらくわかりにくいとなっているのでclassの分割,名前のスペル,ファイルの分割などをし見やすいプログラムにする<br>
+              2.予期せぬ出来事があるとエラーが起こってしまうことがあるのでエラーのバグの解析と改善を行う</font><br>
+          <font size="1"><strong>機能</strong>:herokuにdeployした場合にsesがうまく機能していないのでsesを使えるようにコードを編集する</font><br>
+          </div>
+          </div>
+          <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">作成期間:</strong> 3ヶ月</font><br>
+          <i class="fa fa-flag" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">完成日:</strong>2021/2/5</font><br>
+
+        </div>
+      </div>
+      <div class="right mt-5">
+        <a href="https://recommend-song.herokuapp.com/"><img src="<%= "/title/4.jpg" %>"></a>
+        <div class="overview">
+          <div class="cent">
+            <i class="fa fa-pencil size4" aria-hidden="true" style="font-size:15px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line0">画像での検索エンジン?</strong></font><br>
+          </div>
+          <i class="fa fa-file size5" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">機能</strong></font><br>
+          <font class="study">flask</font>
+          <font class="study">python</font>
+          <font class="study">DB</font>
+          <font class="study">login</font>
+          <font class="study">AI</font>
+          <font class="study">CNN</font><br><br>
+          <div class="qw">
+          <div class="sslick mt-2 mb-2">
+            <a href="<%= "/5toubun/1.png" %>" rel=lightbox><img src="<%= "/5toubun/1.png" %>" width="100%"></a>
+            <a href="<%= "/5toubun/2.png" %>" rel=lightbox><img src="<%= "/5toubun/2.png" %>" width="100%"></a>
+            <a href="<%= "/5toubun/3.png" %>" rel=lightbox><img src="<%= "/5toubun/3.png" %>" width="100%"></a>
+            <a href="<%= "/5toubun/4.png" %>" rel=lightbox><img src="<%= "/5toubun/4.png" %>" width="100%"></a>
+            <a href="<%= "/5toubun/5.png" %>" rel=lightbox><img src="<%= "/5toubun/5.png" %>" width="100%"></a>
+            <a href="<%= "/5toubun/6.png" %>" rel=lightbox><img src="<%= "/5toubun/6.png" %>" width="100%"></a>
+            <a href="<%= "/5toubun/7.png" %>" rel=lightbox><img src="<%= "/5toubun/7.png" %>" width="100%"></a>
+          </div>
+          </div>
+          <br>
+
+          <i class="fa fa-file-text-o" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">特徴</strong></font><br>
+          <font size="1">5等分の花嫁のキャラクターのおすすめ動画を画像を用いて検索できるます.画像がない人は文字でも検索できる機能付き.AIを用いることで画像からそれぞれのキャラクターを区別することができる<br>
+          ...ただ,正確性は良い方ではないので白黒の写真などで期待してる結果が出ないこともあります。すみません</font><br>
+          <i class="fa fa-question" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">なぜ作ろうとしたのか?</strong></font><br>
+          <font size="1">AIを使って画像処理や自然言語処理などのプログラムはいつくか作ってきたのですがそれを実際に使ってみることはやったことがなかったのでサイトとして運用してみたいと思い作成しました.また区別をするのがおもしろい５等分の花嫁のキャラクターを区別し
+          てみたいと思ったので作成しました.</font><br><br><br>
+        <i class="fa fa-thumbs-up size-red" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">頑張った点</strong></font><br>
+        <font size="1"><strong>画像処理</strong>:AIでの画像処理の精度を上げることがとても大変でした.レイヤの構造やエポックの数,学習量などを調整することがとても難しかった.現段階でもキャラクターの区別の精度があまり良くないので
+        これを実際に運用するためには更に精度の高いものを作らないと行けいないと思い,実際に作ることの難しさを痛感しました.</font><br>
+        <i class="fa fa-thumbs-down size-blue" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">改善点</strong></font><br>
+        <div class="sc">
+          <div class="s">
+            <font size="1"><strong>機能</strong>:やはりAIの性能がかなり低いため様々なものに応用することができない.現状特定のパターンの画像でしか正しい解析ができない.より高い精度の結果を出すために学習の仕方を再度学び精度を上げられるように
+              AIについてさらに理解を深めていきたい<br>
+            </font>
+          </div>
+        </div>
+        <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">作成期間:</strong> 2週間</font><br>
+        <i class="fa fa-flag" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">完成日:</strong>2021/11/24</font><br>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <div class="work_container_part">
+      <div class="left mt-5">
+        <img src="<%= "/title/5.jpg" %>">
+        <div class="overview">
+          <div class="cent">
+            <i class="fa fa-pencil size4" aria-hidden="true" style="font-size:15px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line0">ローマ字を日本語に変換!!</strong></font><br>
+          </div>
+          <i class="fa fa-file size5" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">機能</strong></font><br>
+          <font class="study">flask</font>
+          <font class="study">python</font>
+          <div class="qwt">
+          <div class="sslick mt-2 mb-2">
+            <a href="<%= "/o-gle/1.png" %>" rel=lightbox><img src="<%= "/o-gle/1.png" %>" width="100%"></a>
+            <a href="<%= "/o-gle/2.png" %>" rel=lightbox><img src="<%= "/o-gle/2.png" %>" width="100%"></a>
+            <a href="<%= "/o-gle/3.png" %>" rel=lightbox><img src="<%= "/o-gle/3.png" %>" width="100%"></a>
+          </div>
+          </div>
+          <br>
+          <i class="fa fa-file-text-o" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">特徴</strong></font><br>
+          <font size="1">つい検索エンジンにローマ字のまま打ってしまうことってありますよね.こんなとき日本語に変換してくれる機能があればなぁ~って思ったことがある人も多いと思います.
+          そこでローマ字を日本語に変換できる機能を作成しました。ローマ字を打ってしまったら「日本語に変換」をクリック!!</font><br>
+          <i class="fa fa-question" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">なぜ作ろうとしたのか?</strong></font><br>
+          <font size="1">グーグルやヤフーで検索するときに間違ってローマ字のまま打ってしまうことがあった.そこで間違って打ってしまった場合でも日本語のフォントに変換してくれる機能があれば良いなと思い作成しました.</font><br>
+          <i class="fa fa-thumbs-up size-red" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">頑張った点</strong></font><br>
+          <font size="1">1. <strong>プログラムの内容</strong>:日本語に変換するにあたってそれに対応するローマ字と日本語の表を作成すること.また日本語の変換には複雑なパターンがあるのでそれを対応させること.</font><br><br><br>
+          <i class="fa fa-thumbs-down size-blue" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">改善点</strong></font><br>
+          <div class="sc">
+            <div class="s">
+            <font size="1"><strong>プログラムの内容</strong>:現段階ではローマ字をひらがなに変換する機能となっているが多くの人は漢字に変換してほしいと思っている.そのためAIでローマ字と漢字の変換を学習させローマ字から漢字を
+              変換できるように機能の改善を行いたい.</font><br>
+          </div>
+          </div>
+          <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">作成期間:</strong> ２日</font><br>
+          <i class="fa fa-flag" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">完成日:</strong>2021/12/20</font><br>
+
+        </div>
+      </div>
+      <div class="right mt-5">
+        <a href="https://recommend-song.herokuapp.com/"><img src="<%= "/title/6.jpg" %>"></a>
+        <div class="overview">
+          <div class="cent">
+            <i class="fa fa-pencil size4" aria-hidden="true" style="font-size:15px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line0">ロボット動きを見てみよう</strong></font><br>
+          </div>
+          <i class="fa fa-file size5" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">機能</strong></font><br>
+          <font class="study">java</font>
+          <font class="study">awt</font><br><br>
+          <div class="qwt">
+          <div class="sslick mt-2 mb-2">
+            <a href="<%= "/robot/1.png" %>" rel=lightbox><img src="<%= "/robot/1.png" %>" width="100%"></a>
+            <a href="<%= "/robot/2.png" %>" rel=lightbox><img src="<%= "/robot/2.png" %>" width="100%"></a>
+            <a href="<%= "/robot/3.png" %>" rel=lightbox><img src="<%= "/robot/3.png" %>" width="100%"></a>
+            <a href="<%= "/robot/4.png" %>" rel=lightbox><img src="<%= "/robot/4.png" %>" width="100%"></a>
+          </div>
+          </div>
+
+          <i class="fa fa-file-text-o" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">特徴</strong></font><br>
+          <font size="1">オドメトリモデルがどのようなものなのかを数式だけでなく実際にロボットに見立てた点をうごかすことによって理解度を更に上げることができる.
+          ロボットの誤差ありと誤差なしの場合を試すことができるので理想の動きと実際の動きを比較することができる</font><br>
+          <br>
+          <i class="fa fa-question" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">なぜ作ろうとしたのか?</strong></font><br>
+          <font size="1">学校の授業でオドメトリ動作モデルや速度動作モデルを学んだのですが実際はどのような軌道でロボットが動くのかを目で見て確認したかったので動きを見れるプログラムを作ってみました.</font><br>
+        <i class="fa fa-thumbs-up size-red" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">頑張った点</strong></font><br>
+        <font size="1"><strong>awt</strong>:awtを使うことがはじめてだったのでawtの使用を掴むまでが大変でした.またできるだけ見やすいようなプログラムを書こうと心がけていたので
+        どのようなコードにしたら見やすくなるのかを考えることが大変でした.</font><br>
+        <i class="fa fa-thumbs-down size-blue" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">改善点</strong></font><br>
+        <div class="sc">
+          <div class="s">
+            <font size="1"><strong>機能</strong>:<br>1.現段階では角速度や速度,時間などの設定をプログラム上でしか変更できないのでプログラムを使う人が変更できるように機能を変更すること.<br>
+              2.誤差ありと誤差なしの場合でのトータルでの誤差の範囲はどれくらいなのかを計算していないので誤差の割合計算し結果を視覚的に表せるようにしたい
+            </font>
+          </div>
+        </div>
+        <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">作成期間:</strong> １日</font><br>
+        <i class="fa fa-flag" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">完成日:</strong>2020/11/8</font><br>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="work_container_part">
+      <div class="left mt-5">
+        <img src="<%= "/title/7.jpg" %>">
+        <div class="overview">
+          <div class="cent">
+            <i class="fa fa-pencil size4" aria-hidden="true" style="font-size:15px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line0">地図を作ってみよう!</strong></font><br>
+          </div>
+          <i class="fa fa-file size5" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line1">機能</strong></font><br>
+          <font class="study">java</font>
+          <font class="study">awt</font>
+
+          <div class="sslick mt-2 mb-2">
+            <a href="<%= "/map/1.png" %>" rel=lightbox><img src="<%= "/map/1.png" %>" width="100%"></a>
+          </div>
+          <br>
+          <i class="fa fa-file-text-o" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">特徴</strong></font><br>
+          <font size="1">グーグルマップから緯度,経度情報を読み取りそれをExcelにまとめファイルを読み込むことによって地図を作成してみました。現段階では湖しか作っていないのですが基礎的な機能は作成してあるので大きな地図も作ることが
+          可能となっています.</font><br>
+          <i class="fa fa-question" aria-hidden="true"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">なぜ作ろうとしたのか?</strong></font><br>
+          <font size="1">これはインターンシップで地図作成を行った際のプログラムであるので作ろうと思った理由は特にないです.</font><br>
+          <i class="fa fa-thumbs-up size-red" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">頑張った点</strong></font><br>
+          <font size="1"><strong>プログラムの内容</strong>:緯度・経度情報を数値に変換することです.また,人に読んでもらうためにわかりやすいコードを書くことを目標にこのインターンシップの課題に取り組みました.</font><br>
+          <i class="fa fa-thumbs-down size-blue" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">改善点</strong></font><br>
+          <div class="sc">
+            <div class="s">
+            <font size="1"><strong>プログラムの内容</strong>:まずは湖しか表示できていないので他に道路などの情報を入手しプロットできるようにしたい.拡大や縮小を現段階ではすることができないのでこの機能を加えることと,地点の登録が
+            できるようにアップデートしたい.</font><br>
+
+          </div>
+          </div>
+          <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">作成期間:</strong> 2日</font><br>
+          <i class="fa fa-flag" aria-hidden="true" style="font-size:11px;"></i><font size="1" style="padding-left:5px"><strong class="marker_line2">完成日:</strong>2020/12/25</font><br>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
